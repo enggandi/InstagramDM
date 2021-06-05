@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_weight="1"
+        android:src="@mipmap/ic_launcher" />
+
+    <RelativeLayout
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="4"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginBottom="0dp"
+            android:text="namaOrang"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lastChat"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="30dp"
+            android:text="Chat Terakhir" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/personCam"
+            android:layout_width="53dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="6dp"
+            android:background="#00FFFFFF"
+            android:gravity="center"
+            app:icon="@drawable/ic_baseline_photo_camera_24"
+            app:iconTint="#008CFB" />
+
+    </RelativeLayout>
+</LinearLayout>
